@@ -1,0 +1,25 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "youngjin's site"
+theme = "hugo-yj-theme"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = "site of a student, hobbyist programmer, and tech geek"
+  avatar = "img/avatar_512.jpg"
+  favicon = "img/avatar_512.jpg"
+
+[permalinks]
+  posts = "/:year/:title/"
+
+[menu]
+  [[menu.navigation]]
+    name = 'Github'
+    url = 'https://github.com/youngjinpark20'
+  [[menu.navigation]]
+    name = 'Baekjoon'
+    url = 'https://www.acmicpc.net/user/youngjinp20'
+  [[menu.navigation]]
+    name = 'Portfolio'
+    url = 'portfolio'

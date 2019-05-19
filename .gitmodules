@@ -1,0 +1,3 @@
+[submodule "themes/hugo-yj-theme"]
+	path = themes/hugo-yj-theme
+	url = https://github.com/youngjinpark20/hugo-yj-theme
