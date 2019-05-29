@@ -9,6 +9,16 @@ pygmentsUseClasses = true
   description = "site of a student, hobbyist programmer, and tech geek"
   avatar = "img/avatar_512.jpg"
   favicon = "img/avatar_512.jpg"
+  portfolio = [
+    { Name = 'Elements & Principles of Design', Image = 'img/elem.png',  },
+    { Name = 'Digital Illustration', Image = 'img/digitalillustration.png',  },
+    { Name = 'Movie Poster', Image = 'img/movieposter.png',  },
+    { Name = 'Propaganda Poster', Image = 'img/propagandaposter.png',  },
+    { Name = 'Monogram', Image = 'img/monogram.png',  },
+    { Name = 'Cityguide', Image = 'img/cityguide.png',  },
+    { Name = 'Flyer', Image = 'img/youngjin_flyer.jpg',  },
+    { Name = 'Memory Project', Image = 'img/memory.png',  },
+    { Name = 'Rotoscope Animation', Image = 'img/animation.gif' }]
 
 [permalinks]
   posts = "/:year/:title/"

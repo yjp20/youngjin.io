@@ -1,16 +1,20 @@
+
+
 {{ define "main" }}
+<link type="text/css" rel="stylesheet" href="{{"css/custom_port.css" | absURL}}">
 <div class="container float-right">
   <p class="label"> Programming Portfolio </p>
 </div>
 <div class="container float-right">
   <p class="label"> Design Portfolio </p>
   <div class="portfolio">
-    <div class="float-left portfolio-icon-wrapper" style="background-image: url({{ "img/elem.png" | absURL }})">
-      <p class="label portfolio-desc"> cool</p>
-    </div>
-    <div class="float-left portfolio-icon-wrapper" style="background-image: url({{ "img/elem.png" | absURL }})">
-      <p class="label portfolio-desc"> cool</p>
-    </div>
+    {{ range .Site.Params.portfolio }}
+    <a href="{{ "portfolio/{{.URL}}" | absURL}}">
+      <div class="float-left portfolio-icon-wrapper" style="background-image: url({{ .Image | absURL }})">
+        <p class="label portfolio-desc">{{.Name}}</p>
+      </div>
+    </a>
+    {{ end }}
   </div>
 </div>
 {{ end }}
