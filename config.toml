@@ -6,30 +6,65 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  description = "site of a student, hobbyist programmer, and tech geek"
-  avatar = "img/avatar_512.jpg"
-  favicon = "img/avatar_512.jpg"
-  portfolio = [
-    { Name = 'Elements & Principles of Design', Image = 'img/elem.png',  },
-    { Name = 'Digital Illustration', Image = 'img/digitalillustration.png',  },
-    { Name = 'Movie Poster', Image = 'img/movieposter.png',  },
-    { Name = 'Propaganda Poster', Image = 'img/propagandaposter.png',  },
-    { Name = 'Monogram', Image = 'img/monogram.png',  },
-    { Name = 'Cityguide', Image = 'img/cityguide.png',  },
-    { Name = 'Flyer', Image = 'img/youngjin_flyer.jpg',  },
-    { Name = 'Memory Project', Image = 'img/memory.png',  },
-    { Name = 'Rotoscope Animation', Image = 'img/animation.gif' }]
+	description = "site of a student, hobbyist programmer, and tech geek"
+	avatar = "img/avatar_512.jpg"
+	favicon = "img/avatar_512.jpg"
+	[[params.portfolio]]
+		Name = 'Elements & Principles of Design'
+		Image = 'img/elem.png'
+		Desc = 'The elements and principles'
+		Orient = 'h'
+	[[params.portfolio]]
+		Name = 'Digital Illustration'
+		Image = 'img/digitalillustration.png'
+		Desc = ''
+		Orient = 'h'
+	[[params.portfolio]]
+		Name = 'Movie Poster'
+		Image = 'img/movieposter.png'
+		Desc = ''
+		Orient = 'h'
+	[[params.portfolio]]
+		Name = 'Propaganda Poster'
+		Image = 'img/propagandaposter.png'
+		Desc = ''
+		Orient = 'h'
+	[[params.portfolio]]
+		Name = 'Monogram'
+		Image = 'img/monogram.png'
+		Desc = ''
+		Orient = 'h'
+	[[params.portfolio]]
+		Name = 'Cityguide'
+		Image = 'img/cityguide.png'
+		Desc = ''
+		Orient = 'v'
+	[[params.portfolio]]
+		Name = 'Flyer'
+		Image = 'img/youngjin_flyer.jpg'
+		Desc = ''
+		Orient = 'h'
+	[[params.portfolio]]
+		Name = 'Memory Project'
+		Image = 'img/memory.png'
+		Desc = ''
+		Orient = 'h'
+	[[params.portfolio]]
+		Name = 'Rotoscope Animation'
+		Image = 'img/animation.gif'
+		Desc = ''
+		Orient = 'h'
 
 [permalinks]
-  posts = "/:year/:title/"
+	posts = "/:year/:title/"
 
 [menu]
-  [[menu.navigation]]
-    name = 'Github'
-    url = 'https://github.com/youngjinpark20'
-  [[menu.navigation]]
-    name = 'Baekjoon'
-    url = 'https://www.acmicpc.net/user/youngjinp20'
-  [[menu.navigation]]
-    name = 'Portfolio'
-    url = 'portfolio'
+	[[menu.navigation]]
+		name = 'Github'
+		url = 'https://github.com/youngjinpark20'
+	[[menu.navigation]]
+		name = 'Baekjoon'
+		url = 'https://www.acmicpc.net/user/youngjinp20'
+	[[menu.navigation]]
+		name = 'Portfolio'
+		url = 'portfolio'

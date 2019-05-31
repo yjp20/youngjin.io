@@ -1,20 +1,62 @@
-
-
 {{ define "main" }}
 <link type="text/css" rel="stylesheet" href="{{"css/custom_port.css" | absURL}}">
-<div class="container float-right">
-  <p class="label"> Programming Portfolio </p>
+<div id="over">
+	<div class="container m-auto bg-white">
+		<div id="over-d" class="row">
+			<img id="over-img" class="col"></img>
+			<div id="over-desc" class="col">
+				<h1 id="over-title"> </h1>
+				<p id="over-explain"> </p>
+			</div>
+		</div>
+		<button id="over-ex"> &times; </button>
+	</div>
 </div>
 <div class="container float-right">
-  <p class="label"> Design Portfolio </p>
-  <div class="portfolio">
-    {{ range .Site.Params.portfolio }}
-    <a href="{{ "portfolio/{{.URL}}" | absURL}}">
-      <div class="float-left portfolio-icon-wrapper" style="background-image: url({{ .Image | absURL }})">
-        <p class="label portfolio-desc">{{.Name}}</p>
-      </div>
-    </a>
-    {{ end }}
-  </div>
+	<p class="label"> Programming Portfolio </p>
 </div>
+<div class="container float-right">
+	<p class="label"> Design Portfolio </p>
+	<div class="portfolio">
+		{{ range .Site.Params.portfolio }}
+		<button class="portfolio-btn" data-title="{{.Name}}" data-url="{{.Image | absURL}}" data-orient="{{.Orient}}" data-desc="{{.Desc}}">
+			<div class="float-left portfolio-icon-wrapper" style="background-image: url({{ .Image | absURL }})">
+				<p class="label portfolio-desc">{{.Name}}</p>
+			</div>
+		</button>
+		{{ end }}
+	</div>
+</div>
+<script>
+	var body = document.getElementsByTagName("body")[0];
+	var over = document.getElementById("over");
+	var overd = document.getElementById("over-d");
+	var overtitle = document.getElementById("over-title");
+	var overimg = document.getElementById("over-img");
+	var overexplain = document.getElementById("over-explain");
+	var btn = document.getElementsByClassName("portfolio-btn")
+	var overex = document.getElementById("over-ex");
+
+	for (var i=0; i<btn.length; i++) {
+		console.log(btn[i]);
+		btn[i].addEventListener("click", function(e) {
+			if (this.dataset.orient == "v") {
+				overd.setAttribute("v", "")
+			} else {
+				overd.removeAttribute("v")
+			}
+			overtitle.innerText = this.dataset.title;
+			overexplain.innerText = this.dataset.desc;
+			body.setAttribute("lel", "");
+			over.setAttribute("show", "");
+			overimg.setAttribute("src", this.dataset.url);
+		}.bind(btn[i]));
+	};
+
+	overex.addEventListener("click", function() {
+		body.removeAttribute("lel");
+		over.removeAttribute("show");
+		overimg.removeAttribute("src");
+	})
+</script>
 {{ end }}
