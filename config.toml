@@ -12,27 +12,27 @@ pygmentsUseClasses = true
 	[[params.portfolio]]
 		Name = 'Elements & Principles of Design'
 		Image = 'img/elem.png'
-		Desc = 'The elements and principles'
+		Desc = 'This project explored the different elements and principles of art through an assignment for each. I chose here my “color” assignment, which was my favorite. The colors chosen for this project was inspired off of Autumn’s colors.'
 		Orient = 'h'
 	[[params.portfolio]]
 		Name = 'Digital Illustration'
 		Image = 'img/digitalillustration.png'
-		Desc = ''
+		Desc = 'The digital illustration project was made up of many different assignments combined, all meant to bolster our digital illustration abilities, from ideation to production. This drawing is created in the likeness of Obama, who I admire for his talking skills and character. Although this was my favorite of the bunch, it is also only a subset of the images I created for this project.'
 		Orient = 'h'
 	[[params.portfolio]]
 		Name = 'Movie Poster'
 		Image = 'img/movieposter.png'
-		Desc = ''
+		Desc = 'This Movie Poster project was about exploring different ideas in movie poster design, such as identifying and conveying central idea of the movie. I chose a very minimalistic approach to my poster, which was inspired by my research of other movie posters. I had chosen Thor: Ragnarok for this artwork since it was a recent movie that I had watched that stuck on my mind.'
 		Orient = 'h'
 	[[params.portfolio]]
 		Name = 'Propaganda Poster'
 		Image = 'img/propagandaposter.png'
-		Desc = ''
+		Desc = 'For this propaganda poster, we were tasked with conveying a message in a way that would be easy to identify while still being powerful. From historical examples I’ve seen blue and red used as prominent colors within propaganda posters, so I tried to take take inspiration from the past and add a modern twist, adding some more arguably strange and jarring colors.'
 		Orient = 'h'
 	[[params.portfolio]]
 		Name = 'Monogram'
 		Image = 'img/monogram.png'
-		Desc = ''
+		Desc = 'The monogram was a project in which we consulted one of our friends to get what they liked and understand the real design process, making something for someone else other than you. In my case I worked with Claire, who likes this kind of pink, artistic look. To create this artwork, I created custom typography within Illustrator and layered it on top of a simple shape and a stock rose photo.'
 		Orient = 'h'
 	[[params.portfolio]]
 		Name = 'Cityguide'
