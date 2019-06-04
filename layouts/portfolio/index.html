@@ -1,0 +1,20 @@
+{{/*
+vim: ft=gohtmltmpl
+*/}}
+{{ define "main" }}
+	<link rel="stylesheet" href="{{ "css/custom_port.css" | absURL}}">
+	<div class="container float-right">
+		{{.Content}}
+		{{ range $i, $v := .Params.portfolio }}
+			<p class="label">{{.Name}}</p>
+			{{ range .class }}
+				<a class="card-wrapper" href="{{ "portfolio/" | absURL }}{{.Route}}">
+					<div class="card">
+						<h2 class="card-title"> {{.Name}} </h2>
+						<p class="card-desc"> {{.Desc}} </p>
+					</div>
+				</a>
+			{{ end }}
+		{{ end }}
+	</div>
+{{ end }}
