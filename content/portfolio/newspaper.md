@@ -1,3 +1,4 @@
-+++
-layout = 'newspaper'
-+++
+---
+title: newspaper
+layout: newspaper
+---

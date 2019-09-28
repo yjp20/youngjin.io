@@ -1,4 +1,4 @@
-baseURL = "http://youngjin.io/"
+baseURL = "https://youngjin.io/"
 languageCode = "en-us"
 title = "youngjin's site"
 theme = "hugo-yj-theme"
@@ -6,7 +6,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-	description = "site of a student, hobbyist programmer, and tech geek"
+	description = "site of a student, hobby programmer, and tech geek"
 	avatar = "img/avatar_512.jpg"
 	favicon = "img/avatar_512.jpg"
 
@@ -16,10 +16,10 @@ pygmentsUseClasses = true
 [menu]
 	[[menu.navigation]]
 		name = 'Github'
-		url = 'https://github.com/youngjinpark20'
+		url = 'https://github.com/yjp20'
 	[[menu.navigation]]
-		name = 'Baekjoon'
-		url = 'https://www.acmicpc.net/user/youngjinp20'
+		name = 'Codeforces'
+		url = 'https://codeforces.com/profile/youngjinp20'
 	[[menu.navigation]]
 		name = 'Portfolio'
 		url = 'portfolio'
