@@ -9,7 +9,7 @@ I've spent some time creating this site's theme on Hugo, which was the first tim
 
 ## Get Hugo
 
-There are many ways to get Hugo. Check out their website and get it onto your computer.
+There are many ways to get Hugo. Check out [their website](https://gohugo.io/getting-started/installing/) and get it onto your computer.
 
 ## Generate the Hugo site
 Creating a Hugo site is easy, just run the following command after installing Hugo:
@@ -118,11 +118,81 @@ out on the official documentation.
 
 ## Customize templates
 
+There are only a few files that you need to create within your theme. First, create a folder structure like the following.
 
-## Add syntax highlighting
+```
+- [theme-name]
+  - _default (dir)
+    - baseof.html
+    - list.html
+    - single.html
+  - partials (dir)
+    - head.html
+    - header.html
+    - footer.html
+  - index.html
+```
+
+First, let us edit the `baseof.html` file. Every layout, unless otherwise specified, will be "inserting" itself into the `baseof.html` template. A simple file would look like this.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        {{- block "main" . -}}{{- end -}}
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
+```
+
+Edit the partials however you like them to look like in your theme. You can add more partials if you so like. In my case, I added a side partial. For the most part, the `baseof.html` file should be pretty simple and the complexity should be offloaded into partial files.
+
+Here is an example `head.html`.
+
+```html
+<head>
+    <title> {{.Title}} </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ .Description }}">
+    <base href="{{ .Site.BaseURL }}">
+    <link type="text/css" rel="stylesheet" href="{{ 'css/main.css' | absURL }}">
+    <link type="text/css" rel="stylesheet" href="{{ 'css/syntax.css' | absURL }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+</head>
+```
+
+Craft your `list.html` and `single.html` by using the variables described in [the Hugo docs](https://gohugo.io/variables/).
+
+## Add custom variables
+
+There are a few ways to add custom variables. You can add site-wide custom variables through [Params](https://gohugo.io/variables/site/#the-site-params-variable), where you put custom variables within your main `config.toml` under the `params` section. These then can be accessed within templates under the `.Site.Params` variable.
+
+Another way to access variables are within the data folder, but an even cool way to use variables within templates is to add it into your content. You can add variables within your content front matter which you can then access within your templates using `.Params`. Note, this is different from `.Site.Params`.
 
 ## Add custom pages
 
+You can add more sections using the theme default pages by placing them within folders within the content folder.
 
+However, if you want to have a new kind of layout, you can put new layout templates within the `layouts` folder within your main folder. This will essentially add on top of your theme. On your content front matter, you can declare which layout you're going to use or it will automatically find the necessary layout template.
 
+For example, if you wanted to have a Portfolio within your website, you would have something that looks like the following
 
+```
+- [name]
+  - content
+    - portfolio
+      - _index.md
+  - layouts
+    - portfolio
+      - index.tmpl
+```
+
+```
+> in portfolio.tmpl
++++
+layout = 'index'
++++
+```
