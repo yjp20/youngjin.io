@@ -1,0 +1,18 @@
+{{/*
+vim: ft=gohtmltmpl
+*/}}
+{{ define "main" }}
+	<link rel="stylesheet" href="{{ "css/custom_proj.css" | absURL}}">
+	<div class="container float-right">
+		{{.Content}}
+		<ul>
+		{{ range $i, $v := sort .Params.projects "Weight" "desc"}}
+			<li class="project">
+				<h2><a href="{{.Link}}">{{.Name}}</a></h2>
+				<p>{{.Desc}}</p>
+				<p> Status: <em>{{.Status}}</em></p>
+			</li>
+		{{ end }}
+		</ul>
+	</div>
+{{ end }}

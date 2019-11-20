@@ -15,6 +15,7 @@ a.card-wrapper {
 .card {
 	width: 100%;
 	box-sizing: border-box;
+	background-color: #fbfbfb;
 	border: 1px solid #ccc;
 	padding: 1.5em;
 	margin-bottom: 1em;

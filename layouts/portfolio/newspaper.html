@@ -2,4 +2,8 @@
 vim: ft=gohtmltmpl
 */}}
 {{ define "main" }}
+	<div class="container float-right">
+		<a href="{{"/portfolio" | absURL}}"> &larr; portfolio </a>
+		{{.Content}}
+	</div>
 {{ end }}
