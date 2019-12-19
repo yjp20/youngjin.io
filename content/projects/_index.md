@@ -4,7 +4,7 @@ layout = 'index'
 [[projects]]
 	Name = "pokemon-ai"
 	Desc = "A bot platform for Pokemon capable of running local simulations and connect to the official Pokemon Showdown website. It comes included with bots, libraries, state-tracking, etc."
-	Link = "https://youngjin.io/yjp20/pokemon-ai"
+	Link = "https://github.com/yjp20/pokemon-ai"
 	Weight = 100
 	Status = "Ongoing"
 
