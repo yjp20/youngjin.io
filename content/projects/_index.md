@@ -9,6 +9,20 @@ layout = 'index'
 	Status = "Ongoing"
 
 [[projects]]
+	Name = "seoulhacks"
+	Desc = "A website for a Hackathon that I organized with the SeoulHacks team."
+	Link = "https://seoulhacks.com"
+	Weight = 40
+	Status = "Completed"
+
+[[projects]]
+	Name = "state-hate"
+	Desc = "A website for an interactive visualization of each states' least favorite state by manipulating SVGs programmatically."
+	Link = "https://youngjin.io/state-hate"
+	Weight = 30
+	Status = "Completed"
+
+[[projects]]
 	Name = "ultracompact-firefox"
 	Desc = "A CSS userchrome file that themes Firefox to be extremely compact."
 	Link = "https://github.com/yjp20/ultracompact-firefox"
