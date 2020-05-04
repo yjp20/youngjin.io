@@ -1,6 +1,6 @@
 baseURL = "https://youngjin.io/"
 languageCode = "en-us"
-title = "youngjin's site"
+title = "Young Jin Park"
 theme = "hugo-yj-theme"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
@@ -23,9 +23,9 @@ pygmentsUseClasses = true
 		url = 'https://codeforces.com/profile/youngjinp20'
 		weight = 4
 	[[menu.navigation]]
-		name = 'Portfolio'
+		name = 'Art Portfolio'
 		url = 'portfolio'
-		weight = 1
+		weight = 2
 	[[menu.navigation]]
 		name = 'Posts'
 		url = 'posts'
@@ -33,4 +33,4 @@ pygmentsUseClasses = true
 	[[menu.navigation]]
 		name = 'Projects'
 		url = 'projects'
-		weight = 2
+		weight = 1

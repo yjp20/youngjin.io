@@ -1,18 +1,47 @@
 {{/*
 vim: ft=gohtmltmpl
 */}}
+{{ define "project" }}
+	<li class="project">
+		<b><a href="{{.Link}}">{{.Name}}</a></b> - {{.Desc}}
+	</li>
+{{ end }}
 {{ define "main" }}
 	<link rel="stylesheet" href="{{ "css/custom_proj.css" | absURL}}">
-	<div class="container float-right">
+	<div class="container float-right article">
 		{{.Content}}
-		<ul>
-		{{ range $i, $v := sort .Params.projects "Weight" "desc"}}
-			<li class="project">
-				<h2><a href="{{.Link}}">{{.Name}}</a></h2>
-				<p>{{.Desc}}</p>
-				<p> Status: <em>{{.Status}}</em></p>
-			</li>
+		<h2> Maintaining </h2>
+		<ul class="project-list">
+		{{ range $i, $v := sort .Params.projects "Name"}}
+			{{ if eq .Status "Maintaining" }}
+				{{ template "project" . }}
+			{{ end }}
+		{{ end }}
+		</ul>
+		<h2> Archived </h2>
+		<ul class="project-list">
+		{{ range $i, $v := sort .Params.projects "Name"}}
+			{{ if eq .Status "Archived" }}
+				{{ template "project" . }}
+			{{ end }}
+		{{ end }}
+		</ul>
+		<h2> Ongoing </h2>
+		<ul class="project-list">
+		{{ range $i, $v := sort .Params.projects "Name"}}
+			{{ if eq .Status "Ongoing" }}
+				{{ template "project" . }}
+			{{ end }}
 		{{ end }}
 		</ul>
 	</div>
+<style>
+.project-list {
+	list-style: none;
+}
+.project {
+	text-indent: -2em;
+	margin-bottom: 0.4em;
+}
+</style>
 {{ end }}

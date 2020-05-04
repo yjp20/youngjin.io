@@ -1,101 +1,122 @@
 +++
 layout = 'index'
 
+
+[[resources]]
+  src = "piano.png"
+
+[[projects]]
+	Name = "multap"
+	Desc = "multiplayer library for the web"
+	Link = "https://github.com/yjp20/multap"
+	Weight = 105
+	Status = "Ongoing"
+
+[[projects]]
+	Name = "a2"
+	Desc = "progress checker for the a2oj competitive programming ladder"
+	Link = "https://youngjin.io/a2"
+	Weight = 20
+	Status = "Maintaining"
+
+[[projects]]
+	Name = "polyrhythm"
+	Desc = "audio visual polyrhythm visualizer"
+	Link = "https://youngjin.io/polyrhythm"
+	Weight = 30
+	Status = "Maintaining"
+
 [[projects]]
 	Name = "pokemon-ai"
-	Desc = "A bot platform for Pokemon capable of running local simulations and connect to the official Pokemon Showdown website. It comes included with bots, libraries, state-tracking, etc."
+	Desc = "bot platform for Pokemon and machine learning"
 	Link = "https://github.com/yjp20/pokemon-ai"
 	Weight = 100
 	Status = "Ongoing"
 
 [[projects]]
 	Name = "seoulhacks"
-	Desc = "A website for a Hackathon that I organized with the SeoulHacks team."
+	Desc = "animated website for a Hackathon that I organized"
 	Link = "https://seoulhacks.com"
 	Weight = 40
-	Status = "Completed"
-
-[[projects]]
-	Name = "state-hate"
-	Desc = "A website for an interactive visualization of each states' least favorite state by manipulating SVGs programmatically."
-	Link = "https://youngjin.io/state-hate"
-	Weight = 30
-	Status = "Completed"
-
-[[projects]]
-	Name = "ultracompact-firefox"
-	Desc = "A CSS userchrome file that themes Firefox to be extremely compact."
-	Link = "https://github.com/yjp20/ultracompact-firefox"
-	Weight = 10
-	Status = "Completed"
-
-[[projects]]
-	Name = "discord-tourney-bot"
-	Desc = "A bot that easily sets up team drafting in Discord, a team-chatting software. Written in Go and made to be simple."
-	Link = "https://github.com/yjp20/tourney"
-	Weight = 15
 	Status = "Maintaining"
 
 [[projects]]
+	Name = "state-hate"
+	Desc = "interactive visualization of each states' least favorite state"
+	Link = "https://youngjin.io/state-hate"
+	Weight = 30
+	Status = "Archived"
+
+[[projects]]
+	Name = "ultracompact-firefox"
+	Desc = "extremely compact Firefox theme"
+	Link = "https://github.com/yjp20/ultracompact-firefox"
+	Weight = 20
+	Status = "Maintaining"
+
+[[projects]]
+	Name = "tourney"
+	Desc = "bot that easily sets up team drafting in Discord"
+	Link = "https://github.com/yjp20/tourney"
+	Weight = 15
+	Status = "Archived"
+
+[[projects]]
 	Name = "piano"
-	Desc = "Online piano, made because the existing online pianos are made either in Adobe Flash or has bad handling of keypresses. This piano is feature rich with more samples and keybindings."
+	Desc = "interactive, simple online piano"
 	Weight = 25
 	Link = "https://youngjin.io/piano"
-	Status = "Completed"
+	Status = "Archived"
+	Image = "piano.png"
 
 [[projects]]
 	Name = "cccf"
-	Desc = "Our school's Computer Club software to synchronize the google sheets used to track member's merit points with the Codeforces API."
-	Weight = 30
+	Desc = "our school's computer club software to synchronize google sheets"
+	Weight = 10
 	Link = "https://github.com/yjp20/cccf"
-	Status = "Completed"
+	Status = "Archived"
 
 [[projects]]
 	Name = "picem"
-	Desc = "Online pitch-testing application that rates people based on their hearing, and can test common chords and a variety of notes."
+	Desc = "online pitch-testing application"
 	Link = "https://youngjin.io/picem"
 	Weight = 20
-	Status = "Completed"
+	Status = "Archived"
 
 [[projects]]
 	Name = "siji-viewer"
-	Desc = "Convenient Siji font viewer that also makes it easy to select icons and copy and paste them."
+	Desc = "convenient Siji font viewer and selector"
 	Link = "https://youngjin.io/siji"
 	Weight = 16
-	Status = "Completed"
+	Status = "Archived"
 
 [[projects]]
 	Name = "hugo-yj-theme"
-	Desc = "Theme for hugo that is used on my personal site, which you are looking at right now. The theme was made with nice typography and simplicity in mind."
+	Desc = "theme for hugo that is used on my personal site"
 	Link = "https://github.com/yjp20/hugo-yj-theme"
 	Weight = 24
-	Status = "Completed"
+	Status = "Maintaining"
 
 [[projects]]
 	Name = "gosu"
-	Desc = "Online version of the game osu! that utilizes music streaming to make song playing simple, multi-platform, and fast. Game rendering is done with Pixi.js while the backend is written in Go"
+	Desc = "online version of the game osu!"
 	Weight = 30
 	Link = "https://youngjin.io/gosu"
 	Status = "Ongoing"
 
 [[projects]]
 	Name = "bojcli"
-	Desc = "A commandline tool to submit problems to the Baekjoon Online Judge, which is the primary OJ used in Korea. This makes it very convenient to parse and submit problems."
+	Desc = "CLI tool to submit problems to the Baekjoon Online Judge"
 	Weight = 14
 	Link = "https://github.com/yjp20/bojcli"
-	Status = "Maintaining"
+	Status = "Archived"
 
 [[projects]]
 	Name = "powerschool-suite"
-	Desc = "Grade calculator for my school website that makes students lives much easier and also delivers the depressing reality straight to their eyeballs."
+	Desc = "calculator and enhancement for powerschool"
 	Weight = 12
 	Link = "https://github.com/yjp20/powerschool-suite"
-	Status = "Completed"
+	Status = "Archived"
 +++
 
 # Projects
-
-These are my personal projects that I've worked on. Please take a gander if you so wish.
-
-*sorted in terms of importance*
-
