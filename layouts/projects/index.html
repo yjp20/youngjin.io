@@ -4,44 +4,78 @@ vim: ft=gohtmltmpl
 {{ define "project" }}
 	<li class="project">
 		<b><a href="{{.Link}}">{{.Name}}</a></b> - {{.Desc}}
+		{{if .Image}}
+			<div class="project-tooltip">
+				<div class="project-tooltip-wrapper">
+					<img src="{{.Image}}" />
+				</div>
+			</div>
+		{{end}}
 	</li>
 {{ end }}
 {{ define "main" }}
-	<link rel="stylesheet" href="{{ "css/custom_proj.css" | absURL}}">
-	<div class="container float-right article">
-		{{.Content}}
-		<h2> Maintaining </h2>
-		<ul class="project-list">
-		{{ range $i, $v := sort .Params.projects "Name"}}
-			{{ if eq .Status "Maintaining" }}
-				{{ template "project" . }}
-			{{ end }}
-		{{ end }}
-		</ul>
-		<h2> Archived </h2>
-		<ul class="project-list">
-		{{ range $i, $v := sort .Params.projects "Name"}}
-			{{ if eq .Status "Archived" }}
-				{{ template "project" . }}
-			{{ end }}
-		{{ end }}
-		</ul>
-		<h2> Ongoing </h2>
-		<ul class="project-list">
-		{{ range $i, $v := sort .Params.projects "Name"}}
-			{{ if eq .Status "Ongoing" }}
-				{{ template "project" . }}
-			{{ end }}
-		{{ end }}
-		</ul>
-	</div>
+	{{.Content}}
+	<h2> Finished </h2>
+	<ul class="project-list">
+	{{ range $i, $v := sort .Params.projects.finished "Name"}}
+		{{ template "project" . }}
+	{{ end }}
+	</ul>
+	<h2> Ongoing </h2>
+	<ul class="project-list">
+	{{ range $i, $v := sort .Params.projects.ongoing "Name"}}
+		{{ template "project" . }}
+	{{ end }}
+	</ul>
 <style>
 .project-list {
 	list-style: none;
+	padding-left: 0;
 }
+
 .project {
-	text-indent: -2em;
 	margin-bottom: 0.4em;
+}
+
+.project-tooltip {
+	position: relative;
+	width: 100%;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.1s ease;
+}
+
+.project-tooltip:before {
+	z-index: 2000;
+	position: absolute;
+	display: block;
+	content: "";
+	width: 0;
+	height: 0;
+	margin-left: 1em;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-bottom: 1em solid white;
+}
+
+.project-tooltip-wrapper {
+	z-index: 1000;
+	position: absolute;
+	top: 0.8em;
+	border-radius: 5px;
+	padding: 1em;
+	background: white;
+	box-shadow: 0 1px 3px #00000021;
+}
+
+.project:hover .project-tooltip {
+	opacity: 1;
+}
+
+.project-tooltip img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 </style>
 {{ end }}

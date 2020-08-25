@@ -22,29 +22,26 @@ vim: ft=gohtmltmpl
 			<button id="over-ex"> &times; </button>
 		</div>
 	</div>
-	<div class="container float-right">
-		<a href="{{"/portfolio" | absURL}}"> &larr; portfolio </a>
-		<h1> Design </h1>
-		<p class="label"> Design Portfolio </p>
-		<div class="portfolio">
-			{{ range .Params.portfolio }}
-				<button
-					class="portfolio-btn"
-					data-title="{{.Name}}"
-					data-url="{{if .Images}}{{range .Images}}{{. | absURL | safeURL}};{{end}}{{else}}{{.Image | absURL}}{{end}}"
-					data-orient="{{.Orient}}"
-					data-desc="{{safeHTML .Desc}}"
-					{{if .Images}}data-slideshow="t"{{end}}>
-						<div class="float-left portfolio-icon-wrapper" style="background-image: url({{ .Image | absURL }})">
-							<p class="label portfolio-desc">{{.Name}}</p>
-						</div>
-				</button>
-			{{ end }}
-		</div>
+	<h1> HS Design </h1>
+	<p class="label"> Design Portfolio </p>
+	<div class="portfolio">
+		{{ range .Params.portfolio }}
+			<button
+				class="portfolio-btn"
+				data-title="{{.Name}}"
+				data-url="{{if .Images}}{{range .Images}}{{. | absURL | safeURL}};{{end}}{{else}}{{.Image | absURL}}{{end}}"
+				data-orient="{{.Orient}}"
+				data-desc="{{safeHTML .Desc}}"
+				{{if .Images}}data-slideshow="t"{{end}}>
+					<div class="float-left portfolio-icon-wrapper" style="background-image: url({{ .Image | absURL }})">
+						<p class="label portfolio-desc">{{.Name}}</p>
+					</div>
+			</button>
+		{{ end }}
 	</div>
 	<script>
 
-		var body = document.getElementsByTagName("body")[0];
+var body = document.getElementsByTagName("body")[0];
 var over = document.getElementById("over");
 var overd = document.getElementById("over-d");
 var overcurrentindex = document.getElementById("over-currentindex");

@@ -3,7 +3,7 @@ title: newspaper
 layout: newspaper
 ---
 
-# Newspaper
+# HS Newspaper
 
 ## Front Pages
 

@@ -1,7 +1,7 @@
 ---
 title: "Creating a custom theme in Hugo"
 date: 2019-04-01T22:14:57-06:00
-tags: ["code", "blog"]
+tags: ["code"]
 draft: false
 ---
 

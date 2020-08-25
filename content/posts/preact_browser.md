@@ -1,7 +1,7 @@
 ---
 title: "Using Preact without build tools"
 date: 2020-05-03T22:14:57-06:00
-tags: ["code", "blog"]
+tags: ["code"]
 draft: false
 ---
 
