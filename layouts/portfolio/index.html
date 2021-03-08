@@ -2,17 +2,13 @@
 vim: ft=gohtmltmpl
 */}}
 {{ define "main" }}
-	<link rel="stylesheet" href="{{ "css/custom_port.css" | absURL}}">
 	{{.Content}}
 	{{ range $i, $v := .Params.portfolio }}
-		<p class="label">{{.Name}}</p>
 		{{ range .class }}
-			<a class="card-wrapper" href="{{ "portfolio/" | absURL }}{{.Route}}">
-				<div class="card">
-					<h2 class="card-title"> {{.Name}} </h2>
-					<p class="card-desc"> {{.Desc}} </p>
-				</div>
+			<a href="{{ "portfolio/" | absURL }}{{.Route}}">
+				<h2 class="card-title"> {{.Name}} </h2>
 			</a>
+			<p class="card-desc"> {{.Desc}} </p>
 		{{ end }}
 	{{ end }}
 {{ end }}

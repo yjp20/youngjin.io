@@ -23,7 +23,7 @@ Rotating by css is possible, but it's very difficult to get right. Because the t
 
 Here's what I promised, a way to rotate an image without the image clipping out of the boundaries and reacting to the size of the container responsively. First, the code.
 
-```
+```js
 function rotateImage(src, rotation) {
   rotation %= 360;
   return new Promise((resolve) => {

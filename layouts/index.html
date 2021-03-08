@@ -1,0 +1,170 @@
+{{/*
+vim: ft=gohtmltmpl
+*/}}
+{{ define "project" }}
+	<li class="project" id="{{ .Name }}">
+		{{- $link := "" -}}
+		{{- if .Link -}}
+			{{ $link = .Link }}
+		{{- else -}}
+			{{ $link = .Repo }}
+		{{- end -}}
+		<div class="project-meta">
+			<div class="project-desc">
+				<a href="{{ $link }}">{{.Name}}<span class="project-rating">{{.Rating}}</span></a> - {{.Desc}}
+			</div>
+			<div class="project-actions">
+				{{- if .Repo -}}
+					<a href="{{ .Repo }}"><i class="lab la-github"></i></a>
+				{{- end}}
+				{{if .Link -}}
+					<a class="preview-link hide-mobile" href="?{{.Link}}">
+						<i class="las la-arrow-right"></i>
+					</a>
+				{{- end -}}
+			</div>
+		</div>
+		{{if .Image}}
+			<div class="project-tooltip-wrapper">
+				<div class="project-tooltip">
+					<img src="projects/{{.Image}}" />
+				</div>
+			</div>
+		{{end}}
+	</li>
+{{ end }}
+
+{{ define "main" }}
+	{{.Content}}
+	<h2> Ongoing </h2>
+	<ul class="project-list">
+	{{ range $i, $v := sort .Params.projects.ongoing "Name"}}
+		{{ template "project" . }}
+	{{ end }}
+	</ul>
+	<h2> Archived </h2>
+	<ul class="project-list">
+		{{ range $i, $v := sort .Params.projects.finished "Name"}}
+			{{ template "project" . }}
+		{{ end }}
+	</ul>
+	<p style="font-size: 0.75em"><i>1: Few hours to a few days. 2: Few days to a few weeks. 3: few weeks to a month. 4: few months</i></p>
+
+<style>
+.project-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.project {
+	margin-bottom: 0.4em;
+}
+
+.project-meta {
+	display: flex;
+}
+
+.project-desc {
+	margin: -5px;
+	padding: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.project-rating {
+	font-size: 0.65rem;
+	padding: 0 4px;
+	border-radius: 5px;
+	margin-left: 4px;
+	margin-bottom: -4px;
+	line-height: 1;
+	color: white;
+	vertical-align: top;
+	background-color: var(--primary-color);
+}
+
+.project-actions {
+	display: none;
+	flex-shrink: 0;
+	margin-left: auto;
+	padding-left: 0.5rem;
+}
+
+.project:hover .project-actions {
+	display: block;
+}
+
+.project-tooltip-wrapper {
+	position: relative;
+	width: 100%;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.1s ease;
+}
+
+.project:hover .project-tooltip-wrapper {
+	opacity: 1;
+}
+
+.project-tooltip {
+	z-index: 1000;
+	position: absolute;
+	top: 0.8em;
+	border-radius: 5px;
+	padding: 1em;
+	background: white;
+	box-shadow: 0 1px 3px #00000021;
+	border: 1px solid #ccc;
+}
+
+.project-tooltip img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.preview-container {
+	position: relative;
+	width: 100%;
+	max-width: 60rem;
+	align-self: stretch;
+	padding: 2rem;
+}
+
+#preview {
+	position: sticky;
+	top: 1rem;
+	width: 100%;
+	border: 0;
+	overflow: auto;
+	max-height: calc(100vh - 2rem);
+	height: 60rem;
+}
+</style>
+{{ end }}
+
+{{ define "rest" }}
+	<div class="preview-container hide-mobile">
+		<iframe id="preview" src=""></iframe>
+	</div>
+	<script>
+		const elements = document.querySelectorAll(".preview-link")
+		const preview = document.querySelector("#preview")
+
+		for (const el of elements) {
+			el.addEventListener("click", function (e) {
+				e.preventDefault()
+				history.pushState(undefined, undefined, el.href)
+				handlePreview()
+			})
+		}
+
+		function handlePreview() {
+			console.log(decodeURIComponent(location.search.substr(1)))
+			preview.src = decodeURIComponent(location.search.substr(1))
+		}
+
+		handlePreview()
+	</script>
+{{ end }}

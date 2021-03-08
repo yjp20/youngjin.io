@@ -1,5 +1,5 @@
 languageCode = "en-us"
-title = "Young Jin Park"
+title = "youngjin.io"
 theme = "hugo-yj-theme"
 baseURL = "https://youngjin.io/"
 pygmentsCodeFences = true
@@ -15,22 +15,18 @@ pygmentsUseClasses = true
 
 [menu]
 	[[menu.navigation]]
-		name = 'Github'
+		name = 'github'
 		url = 'https://github.com/yjp20'
 		weight = 3
 	[[menu.navigation]]
-		name = 'Codeforces'
+		name = 'codeforces'
 		url = 'https://codeforces.com/profile/youngjinp20'
 		weight = 4
 	[[menu.navigation]]
-		name = 'Design'
+		name = 'design'
 		url = 'portfolio'
 		weight = 2
 	[[menu.navigation]]
-		name = 'Posts'
+		name = 'posts'
 		url = 'posts'
 		weight = -1
-	[[menu.navigation]]
-		name = 'Projects'
-		url = 'projects'
-		weight = 1
