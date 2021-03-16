@@ -35,6 +35,7 @@
 	Name = "small-games"
 	Desc = "a collection of small games for education"
 	Repo = "https://github.com/yjp20/small-games"
+	Link = "https://youngjin.io/small-games"
 	Rating = 1
 
 [[projects.finished]]
@@ -116,7 +117,7 @@
 	Desc = "pick's theorem visualized"
 	Repo = "https://github.com/yjp20/picks-theorem"
 	Link = "https://youngjin.io/picks"
-	Rating = 3
+	Rating = 2
 
 [[projects.finished]]
 	Name = "knbc"
