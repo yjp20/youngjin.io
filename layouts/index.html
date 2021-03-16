@@ -11,7 +11,7 @@ vim: ft=gohtmltmpl
 		{{- end -}}
 		<div class="project-meta">
 			<div class="project-desc">
-				<a href="{{ $link }}">{{.Name}}<span class="project-rating">{{.Rating}}</span></a> - {{.Desc}}
+				<a href="{{ $link }}">{{.Name}}<span class="project-rating{{if ge .Rating 3}} project-rating-high{{end}}">{{.Rating}}</span></a> - {{.Desc}}
 			</div>
 			<div class="project-actions">
 				{{- if .Repo -}}
@@ -82,6 +82,10 @@ vim: ft=gohtmltmpl
 	color: white;
 	vertical-align: top;
 	background-color: var(--primary-color);
+}
+
+.project-rating-high {
+	background-color: var(--secondary-color);
 }
 
 .project-actions {

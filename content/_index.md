@@ -32,6 +32,12 @@
 	Rating = 1
 
 [[projects.finished]]
+	Name = "small-games"
+	Desc = "a collection of small games for education"
+	Repo = "https://github.com/yjp20/small-games"
+	Rating = 1
+
+[[projects.finished]]
 	Name = "ultracompact-firefox"
 	Desc = "extremely compact Firefox theme"
 	Repo = "https://github.com/yjp20/ultracompact-firefox"
@@ -104,6 +110,13 @@
 	Desc = "rofi plugin to hook into mpd"
 	Repo = "https://github.com/yjp20/rofi-mpd-playlist"
 	Rating = 1
+
+[[projects.finished]]
+	Name = "picks-theorem"
+	Desc = "pick's theorem visualized"
+	Repo = "https://github.com/yjp20/picks-theorem"
+	Link = "https://youngjin.io/picks"
+	Rating = 3
 
 [[projects.finished]]
 	Name = "knbc"
