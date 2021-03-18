@@ -27,7 +27,11 @@ vim: ft=gohtmltmpl
 		{{if .Image}}
 			<div class="project-tooltip-wrapper">
 				<div class="project-tooltip">
-					<img src="projects/{{.Image}}" />
+					{{- $previewUrl := print "projects/" .Image -}}
+					{{- $preview := resources.Get $previewUrl -}}
+					{{if $preview}}
+						<img src="{{$preview.Permalink}}" />
+					{{end}}
 				</div>
 			</div>
 		{{end}}
