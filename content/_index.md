@@ -141,6 +141,7 @@
 	Name = "briefscss"
 	Desc = "my personal css library"
 	Repo = "https://github.com/yjp20/briefscss"
+	Link = "https://youngjin.io/briefscss"
 	Rating = 2
 
 [[projects.ongoing]]
