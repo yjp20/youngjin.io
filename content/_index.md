@@ -144,6 +144,12 @@
 	Link = "https://youngjin.io/briefscss"
 	Rating = 2
 
+[[projects.finished]]
+	Name = "shellhook"
+	Desc = "utility to run bash scripts via github webhooks"
+	Repo = "https://github.com/yjp20/shellhook"
+	Rating = 2
+
 [[projects.ongoing]]
 	Name = "mewx"
 	Desc = "multiplayer library for the web"

@@ -143,6 +143,7 @@ vim: ft=gohtmltmpl
 
 .preview-wrapper {
 	position: sticky;
+	overflow: hidden;
 	top: 1rem;
 	width: 100%;
 	max-height: calc(100vh - 2rem);
@@ -151,18 +152,27 @@ vim: ft=gohtmltmpl
 	border-radius: 5px;
 }
 
-.preview-label {
-	position: absolute;
-	top: 0;
-	border-width: 0 1px 1px 0;
-	border-style: solid;
-	border-color: #ccc;
+.preview-bar {
+	display: flex;
+	border-bottom: 1px solid #ccc;
 	font-size: 0.75rem;
-	padding: 0.25rem 0.5rem;
-	border-radius: 0 0 5px 0 ;
 	background-color: white;
-	font-weight: bold;
-	color: grey;
+}
+
+#preview-link {
+	flex: 1;
+	padding: 0.25rem 0.5rem;
+	border-right: 1px solid #ccc;
+}
+
+#preview-to {
+	padding: 0.25rem 0.5rem;
+	border: 0;
+	background-color: transparent;
+}
+
+#preview-to:hover {
+	background-color: #f9f9f9;
 }
 
 #preview {
@@ -177,7 +187,12 @@ vim: ft=gohtmltmpl
 {{ define "rest" }}
 	<div id="preview-container" class="preview-container hide-mobile">
 		<div class="preview-wrapper">
-			<div class="preview-label">PREVIEW</div>
+			<div class="preview-bar">
+				<div id="preview-link">PREVIEW</div>
+				<a class="not-link" id="preview-to" href="">
+					<i class="las la-arrow-right"></i>
+				</a>
+			</div>
 			<iframe id="preview" src=""></iframe>
 		</div>
 	</div>
@@ -185,6 +200,8 @@ vim: ft=gohtmltmpl
 		const elements = document.querySelectorAll(".preview-link")
 		const preview = document.querySelector("#preview")
 		const previewContainer = document.querySelector("#preview-container")
+		const previewLink = document.querySelector("#preview-link")
+		const previewTo = document.querySelector("#preview-to")
 
 		for (const el of elements) {
 			el.addEventListener("click", function (e) {
@@ -196,9 +213,13 @@ vim: ft=gohtmltmpl
 
 		function handlePreview() {
 			const url = decodeURIComponent(location.search.substr(1))
+			previewLink.innerText = url
+			previewTo.href = url
 			previewContainer.style = url ? "display: block" : "display: none"
 			preview.src = url
 		}
+
+
 
 		handlePreview()
 	</script>
