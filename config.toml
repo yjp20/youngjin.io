@@ -14,13 +14,17 @@ pygmentsUseClasses = true
 	posts = "/:year/:title/"
 
 [menu]
-	[[menu.navigation]]
+	[[menu.findme]]
 		name = 'github'
 		url = 'https://github.com/yjp20'
 		weight = 3
-	[[menu.navigation]]
+	[[menu.findme]]
 		name = 'codeforces'
 		url = 'https://codeforces.com/profile/youngjinp20'
+		weight = 4
+	[[menu.findme]]
+		name = 'linkedin'
+		url = 'https://www.linkedin.com/in/youngjin-park-0412b81a0/'
 		weight = 4
 	[[menu.navigation]]
 		name = 'design'
