@@ -181,12 +181,14 @@
 	Repo = "https://github.com/yjp20/gosu"
 	Rating = 3
 
-[[projects.ongoing]]
+[[projects.finished]]
 	Name = "briefscss"
 	Desc = "my personal css library"
 	Repo = "https://github.com/yjp20/briefscss"
 	Link = "https://youngjin.io/briefscss"
 	Rating = 2
+	Year = 2021
+	Month = 5
 
 [[projects.ongoing]]
 	Name = "mewx"
