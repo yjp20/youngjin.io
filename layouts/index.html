@@ -49,13 +49,19 @@ vim: ft=gohtmltmpl
 	<h2> Archived </h2>
 	<ul class="project-list">
 		{{ $last_year := 0 }}
-		{{ range $i, $v := sort (sort .Params.projects.finished "Month" "desc") "Year" "desc" }}
+		{{ $map := newScratch }}
+		{{ range $i, $v := sort .Params.projects.finished "adjusted" "desc" }}
+			{{ $map.Set (string (add (mul $v.Year 100) $v.Month)) $i }}
+		{{ end }}
+		{{ $sorted := sort $map.Values }}
+		{{ range seq (add (len $sorted) -1) -1 0 }}
+			{{ $v := index $.Params.projects.finished (index $sorted .) }}
 			{{ if not (eq $last_year $v.Year) }}
 				{{ $last_year = $v.Year }}
 				<div class="project-year">{{ $v.Year }}</div>
 			{{ end }}
-			{{ template "project" . }}
-		{{ end }}
+			{{ template "project" $v }}
+		{{ end}}
 	</ul>
 	<p style="font-size: 0.75em"><i>1: Few hours to a few days. 2: Few days to a few weeks. 3: few weeks to a month. 4: few months</i></p>
 
