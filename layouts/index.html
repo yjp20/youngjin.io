@@ -48,7 +48,12 @@ vim: ft=gohtmltmpl
 	</ul>
 	<h2> Archived </h2>
 	<ul class="project-list">
-		{{ range $i, $v := sort .Params.projects.finished "Name"}}
+		{{ $last_year := 0 }}
+		{{ range $i, $v := sort (sort .Params.projects.finished "Month" "desc") "Year" "desc" }}
+			{{ if not (eq $last_year $v.Year) }}
+				{{ $last_year = $v.Year }}
+				<div class="project-year">{{ $v.Year }}</div>
+			{{ end }}
 			{{ template "project" . }}
 		{{ end }}
 	</ul>
@@ -60,8 +65,16 @@ vim: ft=gohtmltmpl
 	padding-left: 0;
 }
 
+.project-year {
+	position: absolute;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin-top: 0.25em;
+}
+
 .project {
 	margin-bottom: 0.4em;
+	padding-left: 2.5em;
 }
 
 .project-meta {
@@ -181,6 +194,7 @@ vim: ft=gohtmltmpl
 	height: 100%;
 	border: 0;
 }
+
 </style>
 {{ end }}
 

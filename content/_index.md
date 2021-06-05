@@ -6,6 +6,8 @@
 	Link = "https://youngjin.io/a2"
 	Image = "a2.gif"
 	Rating = 2
+	Year = 2020
+	Month = 4
 
 [[projects.finished]]
 	Name = "polyrhythm"
@@ -14,6 +16,8 @@
 	Link = "https://youngjin.io/polyrhythm"
 	Image = "polyrhythm.gif"
 	Rating = 1
+	Year = 2020
+	Month = 4
 
 [[projects.finished]]
 	Name = "seoulhacks"
@@ -22,6 +26,8 @@
 	Link = "https://seoulhacks.com"
 	Image = "seoulhacks2019.gif"
 	Rating = 1
+	Year = 2020
+	Month = 8
 
 [[projects.finished]]
 	Name = "state-hate"
@@ -30,6 +36,8 @@
 	Link = "https://youngjin.io/state-hate"
 	Image = "state-hate.gif"
 	Rating = 1
+	Year = 2020
+	Month = 1
 
 [[projects.finished]]
 	Name = "small-games"
@@ -37,6 +45,8 @@
 	Repo = "https://github.com/yjp20/small-games"
 	Link = "https://youngjin.io/small-games"
 	Rating = 1
+	Year = 2019
+	Month = 7
 
 [[projects.finished]]
 	Name = "ultracompact-firefox"
@@ -44,12 +54,16 @@
 	Repo = "https://github.com/yjp20/ultracompact-firefox"
 	Image = "ultracompact.gif"
 	Rating = 1
+	Year = 2019
+	Month = 6
 
 [[projects.finished]]
 	Name = "tourney"
 	Desc = "bot that easily sets up team drafting in Discord"
 	Repo = "https://github.com/yjp20/tourney"
 	Rating = 1
+	Year = 2019
+	Month = 11
 
 [[projects.finished]]
 	Name = "piano"
@@ -58,12 +72,16 @@
 	Link = "https://youngjin.io/piano"
 	Image = "piano.gif"
 	Rating = 2
+	Year = 2018
+	Month = 6
 
 [[projects.finished]]
 	Name = "cccf"
 	Desc = "our school's computer club software to synchronize google sheets"
 	Repo = "https://github.com/yjp20/cccf"
 	Rating = 1
+	Year = 2019
+	Month = 11
 
 [[projects.finished]]
 	Name = "picem"
@@ -72,6 +90,8 @@
 	Link = "https://youngjin.io/picem"
 	Image = "picem.gif"
 	Rating = 2
+	Year = 2018
+	Month = 7
 
 [[projects.finished]]
 	Name = "siji-viewer"
@@ -80,24 +100,32 @@
 	Link = "https://youngjin.io/siji"
 	Image = "sijiviewer.gif"
 	Rating = 1
+	Year = 2019
+	Month = 9
 
 [[projects.finished]]
 	Name = "hugo-yj-theme"
 	Desc = "theme for hugo that is used on my personal site"
 	Repo = "https://github.com/yjp20/hugo-yj-theme"
 	Rating = 2
+	Year = 2021
+	Month = 3
 
 [[projects.finished]]
 	Name = "bojcli"
 	Desc = "CLI tool to submit problems to the Baekjoon Online Judge"
 	Repo = "https://github.com/yjp20/bojcli"
 	Rating = 1
+	Year = 2019
+	Month = 3
 
 [[projects.finished]]
 	Name = "powerschool-suite"
 	Desc = "calculator and enhancement for powerschool"
 	Repo = "https://github.com/yjp20/powerschool-suite"
 	Rating = 2
+	Year = 2019
+	Month = 3
 
 [[projects.finished]]
 	Name = "tttheme"
@@ -105,12 +133,16 @@
 	Repo = "https://github.com/yjp20/tttheme"
 	Link = "https://ttonl.org"
 	Rating = 2
+	Year = 2020
+	Month = 6
 
 [[projects.finished]]
 	Name = "rofi-mpd-playlist"
 	Desc = "rofi plugin to hook into mpd"
 	Repo = "https://github.com/yjp20/rofi-mpd-playlist"
 	Rating = 1
+	Year = 2020
+	Month = 3
 
 [[projects.finished]]
 	Name = "picks-theorem"
@@ -118,12 +150,24 @@
 	Repo = "https://github.com/yjp20/picks-theorem"
 	Link = "https://youngjin.io/picks"
 	Rating = 2
+	Year = 2021
+	Month = 3
 
 [[projects.finished]]
 	Name = "knbc"
 	Desc = "web app for team creation / submission for the knbc competition"
 	Repo = "https://github.com/yjp20/knbc"
 	Rating = 3
+	Year = 2019
+	Month = 12
+
+[[projects.finished]]
+	Name = "shellhook"
+	Desc = "utility to run bash scripts via github webhooks"
+	Repo = "https://github.com/yjp20/shellhook"
+	Rating = 2
+	Year = 2021
+	Month = 4
 
 [[projects.ongoing]]
 	Name = "pokemon-ai"
@@ -142,12 +186,6 @@
 	Desc = "my personal css library"
 	Repo = "https://github.com/yjp20/briefscss"
 	Link = "https://youngjin.io/briefscss"
-	Rating = 2
-
-[[projects.finished]]
-	Name = "shellhook"
-	Desc = "utility to run bash scripts via github webhooks"
-	Repo = "https://github.com/yjp20/shellhook"
 	Rating = 2
 
 [[projects.ongoing]]
