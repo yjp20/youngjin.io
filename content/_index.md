@@ -169,6 +169,14 @@
 	Year = 2021
 	Month = 4
 
+[[projects.finished]]
+	Name = "spigot-kotlin-timetracker"
+	Desc = "minecraft spigot plugin to track time played"
+	Repo = "https://github.com/yjp20/spigot-kotlin-timetracker"
+	Rating = 2
+	Year = 2021
+	Month = 6
+
 [[projects.ongoing]]
 	Name = "pokemon-ai"
 	Desc = "bot platform for Pokemon and machine learning"
