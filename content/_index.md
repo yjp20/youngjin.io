@@ -1,5 +1,58 @@
 +++
 [[projects.finished]]
+	Name = "spigot-kotlin-timetracker"
+	Desc = "minecraft spigot plugin to track time played"
+	Repo = "https://github.com/yjp20/spigot-kotlin-timetracker"
+	Rating = 2
+	Year = 2021
+	Month = 6
+
+[[projects.finished]]
+	Name = "briefscss"
+	Desc = "my personal css library"
+	Repo = "https://github.com/yjp20/briefscss"
+	Link = "https://youngjin.io/briefscss"
+	Rating = 2
+	Year = 2021
+	Month = 5
+
+[[projects.finished]]
+	Name = "shellhook"
+	Desc = "utility to run bash scripts via github webhooks"
+	Repo = "https://github.com/yjp20/shellhook"
+	Rating = 2
+	Year = 2021
+	Month = 4
+
+[[projects.finished]]
+	Name = "picks-theorem"
+	Desc = "pick's theorem visualized"
+	Repo = "https://github.com/yjp20/picks-theorem"
+	Link = "https://youngjin.io/picks"
+	Rating = 2
+	Year = 2021
+	Month = 3
+
+[[projects.finished]]
+	Name = "seoulhacks"
+	Desc = "animated website for a Hackathon that I organized"
+	Repo = "https://github.com/yjp20/seoulhacks"
+	Link = "https://seoulhacks.com"
+	Image = "seoulhacks2019.gif"
+	Rating = 1
+	Year = 2020
+	Month = 8
+
+[[projects.finished]]
+	Name = "tttheme"
+	Desc = "wordpress theme for my high school newspaper"
+	Repo = "https://github.com/yjp20/tttheme"
+	Link = "https://ttonl.org"
+	Rating = 2
+	Year = 2020
+	Month = 6
+
+[[projects.finished]]
 	Name = "a2"
 	Desc = "progress checker for the a2oj competitive programming ladder"
 	Repo = "https://github.com/yjp20/a2"
@@ -18,16 +71,6 @@
 	Rating = 1
 	Year = 2020
 	Month = 4
-
-[[projects.finished]]
-	Name = "seoulhacks"
-	Desc = "animated website for a Hackathon that I organized"
-	Repo = "https://github.com/yjp20/seoulhacks"
-	Link = "https://seoulhacks.com"
-	Image = "seoulhacks2019.gif"
-	Rating = 1
-	Year = 2020
-	Month = 8
 
 [[projects.finished]]
 	Name = "state-hate"
@@ -64,16 +107,6 @@
 	Rating = 1
 	Year = 2019
 	Month = 11
-
-[[projects.finished]]
-	Name = "piano"
-	Desc = "interactive, simple online piano"
-	Repo = "https://github.com/yjp20/piano"
-	Link = "https://youngjin.io/piano"
-	Image = "piano.gif"
-	Rating = 2
-	Year = 2018
-	Month = 6
 
 [[projects.finished]]
 	Name = "cccf"
@@ -128,29 +161,11 @@
 	Month = 3
 
 [[projects.finished]]
-	Name = "tttheme"
-	Desc = "wordpress theme for my high school newspaper"
-	Repo = "https://github.com/yjp20/tttheme"
-	Link = "https://ttonl.org"
-	Rating = 2
-	Year = 2020
-	Month = 6
-
-[[projects.finished]]
 	Name = "rofi-mpd-playlist"
 	Desc = "rofi plugin to hook into mpd"
 	Repo = "https://github.com/yjp20/rofi-mpd-playlist"
 	Rating = 1
 	Year = 2020
-	Month = 3
-
-[[projects.finished]]
-	Name = "picks-theorem"
-	Desc = "pick's theorem visualized"
-	Repo = "https://github.com/yjp20/picks-theorem"
-	Link = "https://youngjin.io/picks"
-	Rating = 2
-	Year = 2021
 	Month = 3
 
 [[projects.finished]]
@@ -162,19 +177,13 @@
 	Month = 12
 
 [[projects.finished]]
-	Name = "shellhook"
-	Desc = "utility to run bash scripts via github webhooks"
-	Repo = "https://github.com/yjp20/shellhook"
+	Name = "piano"
+	Desc = "interactive, simple online piano"
+	Repo = "https://github.com/yjp20/piano"
+	Link = "https://youngjin.io/piano"
+	Image = "piano.gif"
 	Rating = 2
-	Year = 2021
-	Month = 4
-
-[[projects.finished]]
-	Name = "spigot-kotlin-timetracker"
-	Desc = "minecraft spigot plugin to track time played"
-	Repo = "https://github.com/yjp20/spigot-kotlin-timetracker"
-	Rating = 2
-	Year = 2021
+	Year = 2018
 	Month = 6
 
 [[projects.ongoing]]
@@ -188,15 +197,6 @@
 	Desc = "online version of the game osu!"
 	Repo = "https://github.com/yjp20/gosu"
 	Rating = 3
-
-[[projects.finished]]
-	Name = "briefscss"
-	Desc = "my personal css library"
-	Repo = "https://github.com/yjp20/briefscss"
-	Link = "https://youngjin.io/briefscss"
-	Rating = 2
-	Year = 2021
-	Month = 5
 
 [[projects.ongoing]]
 	Name = "mewx"

@@ -50,8 +50,8 @@ vim: ft=gohtmltmpl
 	<ul class="project-list">
 		{{ $last_year := 0 }}
 		{{ $map := newScratch }}
-		{{ range $i, $v := sort .Params.projects.finished "adjusted" "desc" }}
-			{{ $map.Set (string (add (mul $v.Year 100) $v.Month)) $i }}
+		{{ range $i, $v := .Params.projects.finished }}
+			{{ $map.Set (string (add (mul $v.Year 10000) (add (mul $v.Month 100) $i))) $i }}
 		{{ end }}
 		{{ $sorted := sort $map.Values }}
 		{{ range seq (add (len $sorted) -1) -1 0 }}
