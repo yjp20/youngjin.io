@@ -2,13 +2,17 @@
 vim: ft=gohtmltmpl
 */}}
 {{ define "main" }}
-	{{.Content}}
-	{{ range $i, $v := .Params.portfolio }}
-		{{ range .class }}
-			<a href="{{ "portfolio/" | absURL }}{{.Route}}">
-				<h2 class="card-title"> {{.Name}} </h2>
-			</a>
-			<p class="card-desc"> {{.Desc}} </p>
+	<div class="content">
+		{{.Content}}
+		{{ range $i, $v := .Params.portfolio }}
+			{{ range .class }}
+				<p class="card-title subtitle">
+					<a href="{{ "portfolio/" | absURL }}{{.Route}}">
+						{{.Name}}
+					</a>
+				</p>
+				<p class="card-desc"> {{.Desc}} </p>
+			{{ end }}
 		{{ end }}
-	{{ end }}
+	</div>
 {{ end }}

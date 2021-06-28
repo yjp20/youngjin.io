@@ -39,6 +39,7 @@ vim: ft=gohtmltmpl
 {{ end }}
 
 {{ define "main" }}
+<div class="content">
 	{{.Content}}
 	<h2> Ongoing </h2>
 	<ul class="project-list">
@@ -58,13 +59,13 @@ vim: ft=gohtmltmpl
 			{{ $v := index $.Params.projects.finished (index $sorted .) }}
 			{{ if not (eq $last_year $v.Year) }}
 				{{ $last_year = $v.Year }}
-				<div class="project-year">{{ $v.Year }}</div>
+				<div class="project-year label is-flat">'{{ substr $v.Year 2 }}</div>
 			{{ end }}
 			{{ template "project" $v }}
 		{{ end}}
 	</ul>
 	<p style="font-size: 0.75em"><i>1: Few hours to a few days. 2: Few days to a few weeks. 3: few weeks to a month. 4: few months</i></p>
-
+</div>
 <style>
 .project-list {
 	list-style: none;
@@ -73,14 +74,12 @@ vim: ft=gohtmltmpl
 
 .project-year {
 	position: absolute;
-	font-size: 0.75em;
-	font-weight: bold;
 	margin-top: 0.25em;
 }
 
 .project {
 	margin-bottom: 0.4em;
-	padding-left: 2.5em;
+	padding-left: 1.5em;
 }
 
 .project-meta {
@@ -104,11 +103,11 @@ vim: ft=gohtmltmpl
 	line-height: 1;
 	color: white;
 	vertical-align: top;
-	background-color: var(--primary-color);
+	background-color: var(--blue-dark);
 }
 
 .project-rating-high {
-	background-color: var(--secondary-color);
+	background-color: var(--orange);
 }
 
 .project-actions {
@@ -238,8 +237,6 @@ vim: ft=gohtmltmpl
 			previewContainer.style = url ? "display: block" : "display: none"
 			preview.src = url
 		}
-
-
 
 		handlePreview()
 	</script>
