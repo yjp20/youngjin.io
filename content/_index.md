@@ -207,10 +207,8 @@
 
 # About Me
 
-![Friends and I](img/pic.jpg)
-
 I currently study at UC Berkeley as an undeclared CS Major.
 
-I’ve taught myself to program nine years ago, got high on the drug of creation, and never stopped programming since. It’s some what funny to think about now — what began as a small curiosity about computers became a parasite that feasts on my soul. I now spend most of my time thinking about efficient algorithms and great abstractions.
+I’ve taught myself to program nine years ago, got high on the drug of creation, and never stopped programming since. I now spend most of my time thinking about efficient algorithms and great abstractions.
 
-Below are most, but not all of the projects I have worked on over the years. There's a lot of projects that were never finished or forgotten, but the most important ones are down here.
+Below are most, but not all of the projects I have worked on over the years, rated in their importance.
