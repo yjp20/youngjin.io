@@ -186,29 +186,39 @@
 	Year = 2018
 	Month = 6
 
-[[projects.ongoing]]
+[[projects.finished]]
 	Name = "pokemon-ai"
 	Desc = "bot platform for Pokemon and machine learning"
 	Repo = "https://github.com/yjp20/pokemon-ai"
 	Rating = 3
+	Year = 2020
+	Month = 4
 
-[[projects.ongoing]]
+[[projects.finished]]
 	Name = "gosu"
 	Desc = "online version of the game osu!"
 	Repo = "https://github.com/yjp20/gosu"
 	Rating = 3
+	Year = 2019
+	Month = 4
 
 [[projects.ongoing]]
 	Name = "mewx"
 	Desc = "multiplayer library for the web"
 	Repo = "https://github.com/yjp20/mewx"
 	Rating = 4
+
+[[projects.ongoing]]
+	Name = "straw"
+	Desc = "some weird programming language"
+	Repo = "https://github.com/yjp20/straw"
+	Rating = 5
 +++
 
 # About Me
 
 I currently study at UC Berkeley as an undeclared CS Major.
 
-I’ve taught myself to program nine years ago, got high on the drug of creation, and never stopped programming since. I now spend most of my time thinking about efficient algorithms and great abstractions.
+I’ve taught myself to program nine years ago, got high on the drug of creation, and never stopped programming since. I now spend most of my time thinking about efficient systems and great abstractions.
 
 Below are most, but not all of the projects I have worked on over the years, rated in their importance.
