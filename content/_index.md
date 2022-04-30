@@ -29,7 +29,7 @@
 	Desc = "pick's theorem visualized"
 	Repo = "https://github.com/yjp20/picks-theorem"
 	Link = "https://youngjin.io/picks"
-	Rating = 2
+	Rating = 3
 	Year = 2021
 	Month = 3
 
@@ -196,9 +196,9 @@
 
 [[projects.finished]]
 	Name = "gosu"
-	Desc = "online version of the game osu!"
+	Desc = "online version of the game osu! (incomplete)"
 	Repo = "https://github.com/yjp20/gosu"
-	Rating = 3
+	Rating = 2
 	Year = 2019
 	Month = 4
 
@@ -213,6 +213,19 @@
 	Desc = "some weird programming language"
 	Repo = "https://github.com/yjp20/straw"
 	Rating = 5
+
+[[projects.ongoing]]
+	Name = "journal"
+	Desc = "web app to track my entire life"
+	Link = "https://journal.youngjin.io"
+	Repo = "https://github.com/yjp20/journal"
+	Rating = 5
+
+[[projects.ongoing]]
+	Name = "matrix-vis"
+	Desc = "truly visualize linalg"
+	Repo = "https://github.com/yjp20/matrix-vis"
+	Rating = 3
 +++
 
 # About Me
