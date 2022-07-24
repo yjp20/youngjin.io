@@ -5,9 +5,9 @@ tags: ["code"]
 draft: false
 ---
 
-One of the things I don't like the most about frameworks like React and Preact is that you lose some of the immediacy of web development through using clunky build tools. Before you can start programming, you have to write up a webpack configuration and have to deal with building the code every time. Sure, newer, streamlined CLI tools make it easier to deal with it, but it's still a compromise to one of native web development's greatest educational features.
+One of the things I don't like the most about frameworks like React and Preact is that you lose some of the immediacy of the web by using clunky build tools. Before you can start programming, you have to write up a webpack configuration and have to deal with building the code every time. Sure, newer, streamlined CLI tools make it easier to deal with it, but it's still a compromise to one of native web development's greatest pedagolgoical features -- a short feedback loop.
 
-While most of the JS community is used to using Webpack, it's not completely necessary. In fact, I would argue that it's a much better experience for new developers to write code for the browser directly. This article details exactly how to get Preact running without any build tools.
+While most of the JS community is used to using Webpack, it's not necessary. In fact, I would argue that it's a much better experience for new developers to write code for the browser directly.
 
 ## Getting Preact on the Browser
 
@@ -64,5 +64,4 @@ const App = function () {
 render(html`<${App} />`, document.body)
 ```
 
-Wherever there would be JSX, you have a string literal with html. Wherever there used to be `{}`, you have `${}`. There's even more syntactical features available to htm that make your life easier. Read more [here](https://github.com/developit/htm).
-
+Wherever there would be JSX, you have a string literal with html. Wherever there used to be `{}`, you have `${}`.

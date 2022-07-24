@@ -188,7 +188,7 @@
 
 [[projects.finished]]
 	Name = "pokemon-ai"
-	Desc = "bot platform for Pokemon and machine learning"
+	Desc = "bot framework for Pokemon Showdown machine learning"
 	Repo = "https://github.com/yjp20/pokemon-ai"
 	Rating = 3
 	Year = 2020
@@ -204,14 +204,14 @@
 
 [[projects.ongoing]]
 	Name = "mewx"
-	Desc = "multiplayer library for the web"
+	Desc = "node.js multiplayer state library for the web"
 	Repo = "https://github.com/yjp20/mewx"
 	Rating = 4
 
 [[projects.ongoing]]
 	Name = "straw"
-	Desc = "some weird programming language"
-	Repo = "https://github.com/yjp20/straw"
+	Desc = "weird interpreted and compiled programming language"
+	Repo = "https://github.com/yjp20/turtle/tree/master/straw"
 	Rating = 5
 
 [[projects.ongoing]]
@@ -223,7 +223,7 @@
 
 [[projects.ongoing]]
 	Name = "matrix-vis"
-	Desc = "truly visualize linalg"
+	Desc = "visualize linalg decompositions"
 	Repo = "https://github.com/yjp20/matrix-vis"
 	Rating = 3
 +++
