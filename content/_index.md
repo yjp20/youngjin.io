@@ -230,7 +230,7 @@
 
 # About Me
 
-I currently study at UC Berkeley as an undeclared CS Major.
+I currently study at UC Berkeley as an declared CS Major.
 
 I’ve taught myself to program nine years ago, got high on the drug of creation, and never stopped programming since. I now spend most of my time thinking about efficient systems and great abstractions.
 
