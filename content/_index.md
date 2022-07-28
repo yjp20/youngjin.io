@@ -221,16 +221,19 @@
 	Repo = "https://github.com/yjp20/journal"
 	Rating = 5
 
-[[projects.ongoing]]
+[[projects.finished]]
 	Name = "matrix-vis"
 	Desc = "visualize linalg decompositions"
 	Repo = "https://github.com/yjp20/matrix-vis"
+	Link = "https://youngjin.io/matrixvis"
 	Rating = 3
+	Year = 2022
+	Month = 5
 +++
 
 # About Me
 
-I currently study at UC Berkeley as an declared CS Major.
+I currently study at UC Berkeley as a CS Major.
 
 I’ve taught myself to program nine years ago, got high on the drug of creation, and never stopped programming since. I now spend most of my time thinking about efficient systems and great abstractions.
 
