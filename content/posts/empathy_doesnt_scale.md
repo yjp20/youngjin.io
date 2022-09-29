@@ -1,3 +1,10 @@
+---
+title: Empathy doesn't scale
+date: 2020-09-29T22:14:57-06:00
+tags: ["rants"]
+draft: true
+---
+
 Empathy doesn't scale. It's obvious to me, and it's obvious to you. The amount of fucks one can give is a limited and hopelessly contested resource. Empathy among friends and family is already precious. By the time we get to groups in the tens of thousands, it almost doesn't exist. By the millions? Forget about it.
 
 This is why captialism works so well. It doesn't rely on emapthy among fellow human beings to have a relatively efficient economic system, unlike a system of altruism. Altruism has worked fine in small groups, but it just doesn't work today with billions of people working together in a global econmoic system.
