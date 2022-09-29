@@ -1,6 +1,6 @@
 ---
 title: Empathy doesn't scale
-date: 2020-09-29T22:14:57-06:00
+date: 2022-09-29T22:14:57-06:00
 tags: ["rants"]
 ---
 
