@@ -1,6 +1,7 @@
 {{/*
 vim: ft=gohtmltmpl
 */}}
+
 {{ define "project" }}
 	<li class="project" id="{{ .Name }}">
 		{{- $link := "" -}}
@@ -39,8 +40,12 @@ vim: ft=gohtmltmpl
 {{ end }}
 
 {{ define "main" }}
+{{ $image := .Resources.GetMatch "friends.jpg" }}
 <div class="content">
-	{{.Content}}
+	<img src={{ $image }} />
+	<div>
+		{{.Content}}
+	</div>
 	<h2> Ongoing </h2>
 	<ul class="project-list">
 	{{ range $i, $v := sort .Params.projects.ongoing "Name"}}
@@ -68,7 +73,11 @@ vim: ft=gohtmltmpl
 </div>
 <style>
 img {
-	width: 100%;
+	display: inline-block;
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 0;
+	width: 200px;
 }
 
 .project-list {
