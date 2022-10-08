@@ -26,6 +26,10 @@ pygmentsUseClasses = true
 		name = 'linkedin'
 		url = 'https://www.linkedin.com/in/youngjin-park-0412b81a0/'
 		weight = 4
+	[[menu.findme]]
+		name = 'resume'
+		url = 'https://youngjin.io/cv.pdf'
+		weight = 20
 	[[menu.navigation]]
 		name = 'design'
 		url = 'portfolio'
