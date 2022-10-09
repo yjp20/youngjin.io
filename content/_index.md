@@ -231,8 +231,10 @@
 	Month = 5
 +++
 
-Greetings, traveller. Welcome to my corner of the internet! I'm Young-Jin, and I currently study CS at UC Berkeley.
+Hey, you, you're finally awake. Welcome to my website! I'm Young-Jin, and I currently study CS at UC Berkeley.
 
-I’ve taught myself to program some years ago, got high on the drug of creation, and never stopped programming since. I now spend most of my time thinking about systems and great abstractions.
+## About me
+
+I’ve taught myself to program some years ago, got high on the drug of creation, and never stopped programming since. I now spend most of my free time thinking about systems and great abstractions.
 
 Below are some of the projects I have worked on over the years.
