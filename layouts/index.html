@@ -43,7 +43,7 @@ vim: ft=gohtmltmpl
 {{ $image := .Resources.GetMatch "friends.jpg" }}
 {{ $image := $image.Resize "x600 q50" }}
 <div class="content">
-	<img src={{ $image }} />
+	<img src="{{ $image.RelPermalink }}" />
 	<div>
 		{{.Content}}
 	</div>
