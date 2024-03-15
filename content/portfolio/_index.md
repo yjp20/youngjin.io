@@ -4,9 +4,8 @@ layout = 'index'
 [[portfolio]]
 	[[portfolio.class]]
 		Name = 'HS Newspaper'
-		Desc = "As production manager of Tiger Times (Seoul International School's newspaper), I designed spreads and managed those who design spreads, among other things."
+		Desc = "I was the production manager of my HS newspaper (Tiger Times), where I designed spreads and managed those who design spreads."
 		Route = 'newspaper'
 +++
 
 # Design Portfolio
-

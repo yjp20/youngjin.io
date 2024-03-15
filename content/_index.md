@@ -231,7 +231,7 @@
 	Month = 5
 +++
 
-Hey, you, you're finally awake. Welcome to my website! I'm Young-Jin, and I currently study CS at UC Berkeley.
+Hey, you, you're finally awake. Welcome to my website! I'm Young-jin, and I currently work on generating SDKs at Stainless API ~~study CS at UC Berkeley~~.
 
 ## About me
 
