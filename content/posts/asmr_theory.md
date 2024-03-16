@@ -6,9 +6,9 @@ draft: false
 ---
 
 I've been really into ASMR videos recently, which if you've been living under a rock are videos that contain
-sounds that promote the tingly sensation in the back of your head. Usually this inv Not everyone experiences
-this and it's still a little unknown (from my brief review of literature). This is my pseudo-scientific
-attempt to explain it.
+sounds that promote the tingly sensation in the back of your head. Not everyone experiences this and it's
+still a little unknown (from my brief review of literature). This is my pseudo-scientific attempt to explain
+it.
 
 First, if you've never experienced it, I'd say that the feeling is oddly similar to the tingly feeling you get
 if you point a sharp object (or even someone else's finger) between your eyes. If you've never experienced
