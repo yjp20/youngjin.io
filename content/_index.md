@@ -236,5 +236,3 @@ Hey, you, you're finally awake. Welcome to my website! I'm Young-jin, and I curr
 ## About me
 
 I’ve taught myself to program some years ago, got high on the drug of creation, and never stopped programming since. I now spend most of my free time thinking about systems and great abstractions.
-
-# Projects
