@@ -38,3 +38,6 @@ pygmentsUseClasses = true
 		name = 'posts'
 		url = 'posts'
 		weight = -1
+
+[markup.goldmark.renderer]
+	unsafe = true

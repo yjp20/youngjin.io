@@ -48,3 +48,10 @@ eventually explore:
 6. How do you enforce memory-safety?
 7. Can you do the above without a GC?
 8. And can you do it without making life too difficult?
+
+---
+
+```
+> .cd hello
+> .exec { .add 1 2 } // if the 
+```
